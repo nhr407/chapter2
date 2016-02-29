@@ -16,20 +16,21 @@
 			<property name="forceBigDecimals" value="false" />
 		</javaTypeResolver>
 		<!-- model package and location -->
-		<javaModelGenerator targetPackage="orm.model" targetProject="C:\mybatis">
+		<javaModelGenerator targetPackage="orm.model" targetProject="D:\tool\ajob\workspace\chapter2">
 			<property name="enableSubPackages" value="true" />
 			<property name="trimStrings" value="true" />
 		</javaModelGenerator>
 		<!-- mapping package and location -->
-		<sqlMapGenerator targetPackage="orm.mapping" targetProject="C:\mybatis">
+		<sqlMapGenerator targetPackage="orm.mapping" targetProject="D:\tool\ajob\workspace\chapter2">
 			<property name="enableSubPackages" value="true" />
 		</sqlMapGenerator>
 		<!-- dao package and location -->
-		<javaClientGenerator type="XMLMAPPER" targetPackage="orm.dao" targetProject="C:\mybatis">
+		<javaClientGenerator type="XMLMAPPER" targetPackage="orm.dao" targetProject="D:\tool\ajob\workspace\chapter2">
 			<property name="enableSubPackages" value="true" />
 		</javaClientGenerator>
 		<!-- table name,  change tableName and domainObjectName  -->
-		<table tableName="muser" domainObjectName="MUser" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+		<table tableName="t_user" domainObjectName="User" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+		<table tableName="t_login_log" domainObjectName="LoginLog" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
 		
 	</context>
 </generatorConfiguration>
