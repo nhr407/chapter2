@@ -1,10 +1,10 @@
-package com.baobaotao.domain;
+package com.baobaotao.model;
 
 import java.io.Serializable;
 import java.util.Date;
 
 /**
- * µÇÂ¼ÈÕÖ¾ÊµÌå
+ * ï¿½ï¿½Â¼ï¿½ï¿½Ö¾Êµï¿½ï¿½
  */
 public class LoginLog implements Serializable {
 	private int loginLogId;

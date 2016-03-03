@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.baobaotao.model.UserMapper">
+    <resultMap id="UserList" type="com.baobaotao.model.User">
+        <id column="userId" property="user_id"  />
+        <result property="userName" column="user_name"/>   
+        <result property="password" column="password"/>   
+        <result property="credits" column="credits"/>   
+        <result property="lastIp" column="last_ip"/>   
+        <result property="lastVisit" column="last_visit"/>   
+    </resultMap>
+    
+    <select id="getAllPerson" resultMap="UserList">
+    	SELECT * FROM t_user
+    </select>
+</mapper>

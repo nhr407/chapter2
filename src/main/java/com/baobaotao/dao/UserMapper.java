@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 
-import com.baobaotao.domain.User;
+import com.baobaotao.model.User;
 
 @Repository(value="userMapper")
 public interface UserMapper {
@@ -26,7 +26,7 @@ public interface UserMapper {
      * @return user list
      */
     // SQL query using xml "UserMapper.xml"
-    List<User> getAll();
+    List<User> getAllPerson();
     
     /**
      * Retrieves the List of user

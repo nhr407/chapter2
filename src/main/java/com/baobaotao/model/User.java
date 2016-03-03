@@ -1,23 +1,23 @@
-package com.baobaotao.domain;
+package com.baobaotao.model;
 
 import java.io.Serializable;
 import java.util.Date;
 
 /**
- * �û���Ϣʵ��
+ * 用户
  */
 public class User implements Serializable {
-	private int userId;
-	private String userName;
-	private String password;
-	private int credits;
-	private String lastIp;
-	private Date lastVisit;
+	private Integer userId;  // pk
+	private String userName; // 用户名
+	private String password; // 密码
+	private Integer credits; // 积分
+	private String lastIp;    // 最后一次登录IP
+	private Date lastVisit;   // 最后一次登录时间
 	
-	public int getUserId() {
+	public Integer getUserId() {
 		return userId;
 	}
-	public void setUserId(int userId) {
+	public void setUserId(Integer userId) {
 		this.userId = userId;
 	}
 	public String getUserName() {
@@ -32,10 +32,10 @@ public class User implements Serializable {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public int getCredits() {
+	public Integer getCredits() {
 		return credits;
 	}
-	public void setCredits(int credits) {
+	public void setCredits(Integer credits) {
 		this.credits = credits;
 	}
 	public String getLastIp() {
