@@ -9,7 +9,7 @@
 	>
 	
 	<!-- 自动扫描 -->
-	<context:component-scan base-package="com.baobaotao" />
+	<context:component-scan base-package="com.baobaotao.dao" />
 	
 	<!-- 引入配置文件 -->
 	<bean id="propertyConfigurer"
